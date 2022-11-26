@@ -1,0 +1,236 @@
+import { TranslationMessages } from 'react-admin';
+import frenchMessages from 'ra-language-french';
+
+const customFrenchMessages: TranslationMessages = {
+    ...frenchMessages,
+    pos: {
+        search: 'Исследовать',
+        configuration: 'Конфигурация',
+        language: 'Язык',
+        theme: {
+            name: 'Тема',
+            light: 'Светлая',
+            dark: 'Темная',
+        },
+        dashboard: {
+            monthly_revenue: 'CA à 30 jours',
+            month_history: "Chiffre d'affaire sur 30 jours",
+            new_orders: 'Nouvelles commandes',
+            pending_reviews: 'Commentaires à modérer',
+            all_reviews: 'Voir tous les commentaires',
+            new_customers: 'Nouveaux clients',
+            all_customers: 'Voir tous les clients',
+            pending_orders: 'Commandes à traiter',
+            order: {
+                items:
+                    'par %{customer_name}, un poster || par %{customer_name}, %{nb_items} posters',
+            },
+            welcome: {
+                title: 'Bienvenue sur la démo e-commerce de react-admin',
+                subtitle:
+                    "Ceci est le back-office d'un magasin de posters imaginaire. N'hésitez pas à explorer et à modifier les données. La démo s'exécute en local dans votre navigateur, et se remet à zéro chaque fois que vous rechargez la page.",
+                ra_button: 'Site web de react-admin',
+                demo_button: 'Code source de cette démo',
+            },
+        },
+        menu: {
+            sales: 'Продажи',
+            catalog: 'Каталог',
+            customers: 'Покупатели',
+        },
+    },
+    resources: {
+        customers: {
+            name: 'Имя фамилия',
+            fields: {
+                address: 'Улица',
+                birthday: 'День рождения',
+                city: 'Город',
+                stateAbbr: 'Страна',
+                commands: 'Заказы',
+                first_name: 'Имя',
+                first_seen: 'Первый визит',
+                groups: 'Сегменты',
+                has_newsletter: 'Подписка на рассылку',
+                has_ordered: 'Упорядоченный',
+                last_name: 'Фамилия',
+                last_seen: 'Видел',
+                last_seen_gte: 'Видел с ',
+                latest_purchase: 'Последняя покупка',
+                name: 'Имя',
+                total_spent: 'Затраты',
+                zipcode: 'Почтовый код',
+                password: 'Пароль',
+                confirm_password: 'Повторите пароль',
+            },
+            filters: {
+                last_visited: 'Последний визит',
+                today: "Сегодня",
+                this_week: 'На этой неделе',
+                last_week: 'На прошлой неделе',
+                this_month: 'В этом месяце',
+                last_month: 'В прошлом месяце',
+                earlier: 'Ранее',
+                has_ordered: 'A déjà commandé',
+                has_newsletter: 'Уже заказал',
+                group: 'Сегменты',
+            },           
+                        
+            fieldGroups: {
+                identity: 'Идентификация',
+                address: 'Адрес',
+                stats: 'Статистика',
+                history: 'История',
+                password: 'Пароль',
+                change_password: 'Повторите пароль',
+            },
+            page: {
+                delete: 'Удалить клиента',
+            },
+            errors: {
+                password_mismatch:
+                    'Пароль подтверждения отличается от пароля.',
+            },
+        },
+        commands: {
+            name: 'Commande  Commandes',
+            amount: '1 заказ  %{smart_count} заказы',
+            title: 'Упорядочить n°%{reference}',
+            fields: {
+                basket: {
+                    delivery: 'Стоимость доставки',
+                    reference: 'Ссылка',
+                    quantity: 'Количество',
+                    sum: 'Сумма',
+                    tax_rate: 'НДС',
+                    taxes: 'НДС',
+                    total: 'Всего',
+                    unit_price: 'За еденицу',
+
+},
+
+                address: 'Адрес',
+                customer_id: 'Покупатель',
+                date_gte: 'Выпущено с',
+                date_lte: 'Выпущено до',
+                nb_items: 'Количество предметов',
+                reference: 'Ссылка',
+                returned: 'Отменено',
+                status: 'Статус',
+                total_gte: 'Минимальная сумма',
+            },
+            section: {
+                order: 'Упорядоченный',
+                customer: 'Покупатель',
+                shipping_address: 'Адресс доставки',
+                items: 'Товар',
+                total: 'Всего',
+            },
+        },
+        invoices: {
+            name: 'Счета',
+            fields: {
+                id: 'Номер',
+                date: 'Дата выставления счета',
+                customer_id: 'Покупатель',
+                command_id: 'Упорядоченный',
+                date_gte: 'Выпущено с',
+                date_lte: 'Выпущено до',
+                address: 'Адрес',
+                total_ex_taxes: 'Сумма без НДС',
+                delivery_fees: 'Стоимость доставки',
+                taxes: 'НДС',
+            },
+        },
+        products: {
+            name: 'Имя фамилия',
+            fields: {
+                category_id: 'Категория',
+                height_gte: 'Минимальная высота',
+                height_lte: 'Максимальная высота',
+                height: 'Высота',
+                image: 'Фотография',
+                price: 'Цена',
+                reference: 'Ссылка',
+                sales: 'Продажи',
+                stock_lte: 'Низкий запас',
+                stock: 'Stock',
+                thumbnail: 'В поле зрения',
+                width_gte: 'Минимальная ширина',
+                width_lte: 'Максимальная ширина',
+                width: 'Ширина',
+            },
+            tabs: {
+                image: 'Изображение',
+                details: 'Подробности',
+                description: 'Описание',
+                reviews: 'Комментарии',
+            },
+            filters: {
+                categories: 'Catégories',
+                stock: 'Stock',
+                no_stock: 'En rupture',
+                low_stock: '1 - 9 unités',
+                average_stock: '10 - 49 unités',
+                enough_stock: '50 unités et plus',
+                sales: 'Ventes',
+                best_sellers: 'Meilleures ventes',
+                average_sellers: 'Moyennes',
+                low_sellers: 'Peu vendu',
+                never_sold: 'Jamais vendu',
+            },
+        },
+        categories: {
+            name: 'Категории',
+            fields: {
+                name: 'Имя',
+                products: 'Товары',
+            },
+        },
+        reviews: {
+            name: 'Комментарии',
+            amount: '1 комментарий  %{smart_count} комментарии',
+            relative_to_poster: 'Комментировать',
+            detail: 'Подробности комментария',
+            fields: {
+                customer_id: 'Покупатель',
+                command_id: 'Упорядоченный',
+                product_id: 'Товары',
+                date_gte: 'Опубликовано с',
+                date_lte: 'Опубликовано до',
+                date: 'Дата',
+                comment: 'Текст',
+                status: 'Статус',
+                rating: 'Рейтинг',
+            },
+            action: {
+                accept: 'Принимать',
+                reject: 'Отклонять',
+            },
+            notification: {
+                approved_success: 'Одобренный комментарий',
+                approved_error: 'Ошибка: комментарий не одобрен',
+                rejected_success: 'Комментарий отклонен',
+                rejected_error: 'Ошибка: комментарий не отклонен',
+            },
+        },
+        segments: {
+            name: 'Сегмент || Сегменты',
+            fields: {
+                customers: 'Покупатель',
+                name: 'Имя',
+            },
+            data: {
+                compulsive: 'Принудительный',
+                collector: 'Коллекционер',
+                ordered_once: 'Упорядоченный',
+                regular: 'Обычный',
+                returns: 'Отправили обратно',
+                reviewer: 'Комментатор',
+
+},
+        },
+    },
+};
+
+export default customFrenchMessages;
